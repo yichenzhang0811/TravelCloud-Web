@@ -14,13 +14,7 @@ dotenv.config();
 
 app.use(bodyParser.json({ limit: "32mb", extended: true }));
 app.use(bodyParser.urlencoded({ limit: "32mb", extended: true }));
-app.use(
-  cors({
-    origin: "http://localhost:3000", // 允许你的前端请求
-    credentials: true,
-    allowedHeaders: ["Authorization", "Content-Type"], // 允许 `Authorization` 头
-  })
-);
+app.use(cors());
 
 app.use("/cities", cityRoutes);
 app.use("/posts", postRoutes);
