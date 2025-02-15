@@ -1,0 +1,33 @@
+.log-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8f9fa;
+}
+
+.log-row {
+  width: 80%;
+  max-width: 1000px;
+  background: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.log-form-container {
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.log-form {
+  width: 100%;
+  max-width: 400px;
+}
+
+.log-image-container {
+  background: url("https://images.unsplash.com/photo-1502003148287-a82ef80a6abc?q=80&w=1288&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+    no-repeat center center/cover;
+}
